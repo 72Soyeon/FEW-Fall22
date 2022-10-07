@@ -1,0 +1,251 @@
+
+
+html,
+body{
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Nav Bar */
+/* Credits to David~ */
+.topNav {
+    /* display flex & justify content space between */
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0px 100px;
+    margin: 20px 0px 0px 0px;
+}
+
+.leftSide {
+    margin: 0px;
+    padding: 0px;
+    /* make sure the width of left side div and right side div are the same or space between won't put the center div exactly in the center */
+    width: 200px;
+}
+
+.center {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.rightSide {
+    list-style: none;
+    color: #758f8b;
+    font-size: 12px;
+    font-weight: 800;
+    /* make sure the width of left side div and right side div are the same or space between won't put the center div exactly in the center */
+    width: 200px;
+}
+/* ~Credits to David */
+
+.menuItem{
+    display: inline;
+    margin: 0 10px;
+    font-family: 13px;
+}
+
+/* main */
+
+.main{
+    position: relative;
+    text-align: center;
+}
+
+.mainImgContainer{
+    width:100%;
+}
+
+.mainIntro{
+    color: white;
+    font-size: 1.8rem;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    font-weight: 800;
+} 
+
+.searchBox{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    font-weight: 800;
+    text-align: center;
+    width: 800px;
+    background: white;
+    border-radius: 40px;
+    height: 50px;
+
+} 
+
+.icon{
+    margin-top: 15px;
+    fill: #a3a3a3;
+    height: 24px;
+    width: 24px;
+    margin-left: -65px;
+}
+
+
+.textInput{
+    width: 80%;
+    border: none;
+    color: #000;
+    height: 40px;
+    margin-top: -18px;
+    outline: none;
+    font-size: 24px;
+    vertical-align: middle;
+    
+}
+
+.mainImage{
+    width: 100%;
+
+}
+
+
+
+
+/* Posts */
+
+.posts{
+    margin: 40px 100px 80px 100px;
+}
+
+.postCategory{
+    color: #000;
+}
+
+.postImgContainer{
+    list-style: none;
+}
+
+.forSale{
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    list-style: none;
+}
+
+.postImage{
+    width: 282px;
+    height: 160px;
+    margin-top: 20px;
+}
+
+.postTitle{
+    color: #191919; 
+    font-weight: 500;
+    width: 282px;
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 25.6px;
+    margin-right: 0px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .topNav {
+        /* display flex & justify content space between */
+        display: flex;
+        justify-content: space-between;
+        height: 50px;
+        padding: 0px 20px;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .leftSide {
+        margin: 0px;
+        padding: 0px;
+        width: 150px;
+    }
+
+    .rightSide {
+        list-style: none;
+        color: #758f8b;
+        font-size: 12px;
+        font-weight: 800;
+        width: 150px;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0px;
+    }
+
+    .rightSide div{
+        padding: 0;
+    }
+
+    .center {
+        font-weight: 800;
+        font-size: 24px;
+    }
+
+
+    .posts{
+        margin: 0px 100px 80px 20px;
+    }
+
+
+    .postImage{
+        width: 120%;
+        height: 260px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    ol{
+        padding: 0px;
+    }
+    
+
+
+    .mainIntro{
+        color: white;
+        font-size: 1.2rem;
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        font-weight: 800;
+    } 
+    
+    .searchBox{
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        font-weight: 800;
+        text-align: center;
+        width: 90%;
+        background: white;
+        border-radius: 40px;
+        height: 50px;
+    
+    } 
+
+
+    .textInput{
+        width: 60%;
+        border: none;
+        color: #000;
+        height: 40px;
+        margin-top: -18px;
+        outline: none;
+        font-size: 24px;
+        vertical-align: middle;
+        
+    }
+
+    .mainImgContainer img{
+        width:100%;
+        height: 200px;
+    }
+
+    
+}
