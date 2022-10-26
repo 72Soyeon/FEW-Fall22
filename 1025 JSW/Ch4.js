@@ -12,7 +12,7 @@ function askingQuestion(){
     console.log("Have you ever felt like a plastic bag?");
     let answer = prompt("Type yes or no: ");
 
-    while (answer!="yes" || answer!="no"){
+    while (answer!="yes" && answer!="no"){
         console.log("Wrong input!");
         console.log("Have you ever felt like a plastic bag?");
         answer = prompt("Type yes or no: ");
