@@ -16,7 +16,7 @@ function onSubmit(){
 
     let newSentence = (document.getElementById(
         'text'
-    ).innerText = `Whatever ${nameBox.value} wants is the best ${ageBox.value}, ${foodBox.value}`);
+    ).innerText = `Whatever ${nameBox.value} wants is '<br/><br>'the best ${ageBox.value}, '<br/><br>' ${foodBox.value}`);
     nameBox.value = '';
 
     setTimeout(() =>{
@@ -26,8 +26,10 @@ function onSubmit(){
 
     setTimeout(()=>{
         nameBox.style.background="#ffffff";
-
-    }, 4000);
+        nameBox.value = '';
+        ageBox.value='';
+        foodBox.value='';
+    }, 5000);
 
 
 }
