@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+#contentful-container{
+    width: 60%;
+    margin-top: 5rem;
+}
+
+.image{
+    width: 600px;
+}
+
+.post-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.body{
+    font-size: 18px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}

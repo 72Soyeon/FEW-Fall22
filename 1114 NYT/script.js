@@ -20,11 +20,11 @@ var app = {
       console.log("Get NYT popular articles");
       var currentSection = 'arts';
       var nyTimesURL =
-        `https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=yourkey`;
+        `https://api.nytimes.com/svc/topstories/v2/${currentSection}.json?api-key=`;
       var myNYKey = 'KeN56xnDFaObiJIe7Mcb6nc1y8TA6hU7';
       var nyTimesReqURL = nyTimesURL + myNYKey;
       console.log(nyTimesReqURL);
-       
+      
       fetch(nyTimesReqURL)
         .then(response => response.json())
         .then(data => {
